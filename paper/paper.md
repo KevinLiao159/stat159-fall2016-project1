@@ -16,9 +16,9 @@ The goal of the paper is to demonstrate user experiences of reproducible tools t
 
 The paper is intended to throw a series of technical definitions or codes to reader. Instead, it is about providing personal feedbacks and reflections upon how we can make research or workflow easier and more efficient. 
   
-  
-  
----# Introduction
+---
+
+# Introduction
 
 First of all, before we start to throw out technical terms and potentially confuse everyone. We would like discusss why reproducible workflow is important. During the lecture, we learned that the Potti scandal damaged reputation of a top research institution and took away hopes from people with desperate illness. 
 
