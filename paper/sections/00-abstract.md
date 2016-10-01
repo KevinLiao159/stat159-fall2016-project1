@@ -6,7 +6,7 @@ output: pdf_document
 ---
 # Paper 
 
-![alt tag](../../images/stat159-logo.png)
+![alt tag](https://raw.githubusercontent.com/KevinLiao159/stat159-fall2016-project1/master/images/stat159-logo.png)
 
 # Abstract
 
