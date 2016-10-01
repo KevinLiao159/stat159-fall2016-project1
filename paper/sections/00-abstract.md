@@ -14,7 +14,7 @@ Reproducibility is essential in scientific research. Being able to carry out rep
   
 The goal of the paper is to demonstrate user experiences of reproducible tools to who will be interested in learning reproducible research. We will show how to use those tools and what are the pros and cons during the paper - to give beginners in statistical computation a basic understanding of the reproducing process. 
 
-The paper is intended to throw a series of technical definitions or codes to reader. Instead, it is about providing personal feedbacks and reflections upon how we can make research or workflow easier and more efficient.
+The paper is intended to throw a series of technical definitions or codes to reader. Instead, it is about providing personal feedbacks and reflections upon how we can make research or workflow easier and more efficient. 
   
   
   
