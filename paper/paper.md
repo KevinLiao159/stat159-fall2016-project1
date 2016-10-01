@@ -4,21 +4,46 @@ author: "Kevin Liao"
 date: "9/27/2016"
 output: pdf_document
 ---
-![Stats159 logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/stat159-logo.png)
+# Paper 
+
+![alt tag](../../images/stat159-logo.png)
 
 # Abstract
 
-
-Reproducibility is essential in scientific research. Being able to carry out reproducibility will increase transparancy of research procedure and reduce fraudulent incidents.
+Reproducibility is essential in scientific research. Being able to carry out reproducibility will increase transparancy of research procedure and reduce fraudulent incidents. Stat 159 introduces what is reproducible workflow and why we need it. This paper is intended for summarizing what we have learned and what are some tools and concepts for reproducible research. Some main concepts include **Git**, **Github**, **Makefile**, **pandoc**, and **Markdown**. 
   
----
-# Introduction
+The goal of the paper is to demonstrate user experiences of reproducible tools to who will be interested in learning reproducible research. We will show how to use those tools and what are the pros and cons during the paper - to give beginners in statistical computation a basic understanding of the reproducing process. 
 
-
-We will use multiple programming tools to acchieve our goal. Following tools will be introduced in this paper: bash, markdown, pandoc, git, github, Make. And we will describe roles of each of tools we used. 
+The paper is intended to throw a series of technical definitions or codes to reader. Instead, it is about providing personal feedbacks and reflections upon how we can make research or workflow easier and more efficient.
   
+  
+  
+---# Introduction
+
+First of all, before we start to throw out technical terms and potentially confuse everyone. We would like discusss why reproducible workflow is important. During the lecture, we learned that the Potti scandal damaged reputation of a top research institution and took away hopes from people with desperate illness. 
+
+The following content of the paper will present the solutions to create a reproducible workflow. It allows readers and other researchers to reproduce their research and draw to the same conclusion. To make workflow reproducible, we need a series of advanced tools to accomplish this goal. 
+
+At the beginning of any project, we need to make sure there is only one version of the work in the middle of research. In order to acchieve such a goal, we need **Git**. **Git** is an open source distributed version control system that helps people keep track of changes they made to documents.
+
+**Git** is a version control system working on one's local address. How about we need some tools like dropbox where we can co-operate and work each part remotely. Now we need **GitHub**. **GitHub** is a web-based Git repository hosting service. 
+
+Next concern is what format do our paper use? We use **Markdown**. **Markdown** is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name.
+
+Now that we have **Markdown**. But how do we convert paper's text to **Markdown**. To bridge this gap, we will use **Pandoc**. **Pandoc** is a free and open-source software document converter.
+
+How about compiling file together? We will use **Makefile**. And we will talk more about the **Makefile** in our main discussion in the paper.
+
+Now We believe everyone should have a general idea of why and how make workflow reproducible is important. We will extend this concepts to next part of the paper -- Main Discusion
+
 ---
-# Main discussion
+
+
+
+
+
+  
+---# Main discussion
 
 
 ## Makefile
@@ -27,28 +52,38 @@ We will use multiple programming tools to acchieve our goal. Following tools wil
 * Makefile plays an important role in reproducibility because it can shorten the compiling process and so it reduces chances of potential errors that are created during a complicated data compiling process. 
 
 ## Git
-![Git logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/git-logo.png)
+![alt tag](../../images/git-logo.png)
 
 * Git is a version control system for programming developers. Every git repository on every computer has full version-tracking capabilities and is independent of network access 
+
+The most common command lines asscoiated with Git are:
+* `git init` - which initiates git on a new working directory
+* `git status` - which checks the current git status
+* `git add` - which stages the file
+* `git commit` - which commits the changes with specific commit message
+* `git log` - which presents all history changes 
+* `git checkout` - which checks out commits, branches or files
 
 * Git also plays an important role in reproducible workflow. It allows each team member contribute their work without overwriting each other. At the same time, it also allows each contribution merges together. Besides team work aspects, git can keep track of modifications of files. Any changes in git can be traced back and examined. It allows follower fellows to reproduce the same work. 
 
 ## GitHub
-![GitHub logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/github-logo.png)
+![alt tag](../../images/github-logo.png)
 
 * Github is a web-based online Git repository. It also offers version control like Git. GitHub offers both plans for private repositories, and free accounts which are commonly used to host open-source software projects. 
 
 * Github is an important component in reproducibile workflow. Projects on GitHub can be accessed and manipulated using the standard Git command-line interface and all of the standard Git commands work with it. GitHub also allows registered and non-registered users to browse public repositories on the site. If researchers conduct projects on GitHub, the workflow can be tracked and reproduced by followers.
 
+* Also, Github creates a space for people to publish and store their work (codes, documents, graphs, emails etc.) on a remote server such that they can access the materials from all places. This will be a convenient tool for people to undo changes, avoid some mistakes, and save time and resources.
+
 ## Pandoc
-![Pandoc logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/pandoc-logo.png)
+![alt tag](../../images/github-logo.png)
 
 * Pandoc is a free and open-source software document converter. 
 
 * Pandoc can read many forms of lightweight markup language, HTML, ReStructuredText, LaTeX, OPML, Org-mode, DocBook, and Office Open XML (Microsoft Word .docx). It can be used to create files in many more formats, including Office Open XML, OpenDocument, HTML, Wiki markup, InDesign ICML, web-based slideshows, ebooks, OPML, and various TeX formats. It has built-in support for converting LaTeX mathematical equations to MathML and MathJax, among other formats.
 
 ## Markdown
-![Markdown logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/markdown-logo.png)
+![alt tag](../../images/pandoc-logo.png)
 
 * Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. The key design goal is readability – that the language be readable as-is, without looking like it has been marked up with tags or formatting instructions.
 
@@ -93,4 +128,4 @@ We will use multiple programming tools to acchieve our goal. Following tools wil
 # Conclusions
 
 
-In conclusions, we have successfully used all the tools that we introduced earlier to produce such a reproducible paper. This paper is designated for people who are interested in reproducible research. 
+In conclusions, we have successfully used all the tools that we introduced earlier to produce such a reproducible paper. This paper is designated for people who are interested in reproducible research. We will continue to make effort and learn about reproducible workflow and how we can better contribute to the world of research. Hope you enjoy the paper.

@@ -14,13 +14,26 @@
 <h2 class="author">Kevin Liao</h2>
 <h3 class="date">9/27/2016</h3>
 </div>
+<h1 id="paper">Paper</h1>
 <div class="figure">
-<img src="https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/stat159-logo.png" alt="Stats159 logo" />
-<p class="caption">Stats159 logo</p>
+<img src="../../images/stat159-logo.png" alt="alt tag" />
+<p class="caption">alt tag</p>
 </div>
 <h1 id="abstract">Abstract</h1>
-<p>Reproducibility is essential in scientific research. Being able to carry out reproducibility will increase transparancy of research procedure and reduce fraudulent incidents.</p>
-<h1 id="main-discussion">Main discussion</h1>
+<p>Reproducibility is essential in scientific research. Being able to carry out reproducibility will increase transparancy of research procedure and reduce fraudulent incidents. Stat 159 introduces what is reproducible workflow and why we need it. This paper is intended for summarizing what we have learned and what are some tools and concepts for reproducible research. Some main concepts include <strong>Git</strong>, <strong>Github</strong>, <strong>Makefile</strong>, <strong>pandoc</strong>, and <strong>Markdown</strong>.</p>
+<p>The goal of the paper is to demonstrate user experiences of reproducible tools to who will be interested in learning reproducible research. We will show how to use those tools and what are the pros and cons during the paper - to give beginners in statistical computation a basic understanding of the reproducing process.</p>
+<p>The paper is intended to throw a series of technical definitions or codes to reader. Instead, it is about providing personal feedbacks and reflections upon how we can make research or workflow easier and more efficient.</p>
+<p>---# Introduction</p>
+<p>First of all, before we start to throw out technical terms and potentially confuse everyone. We would like discusss why reproducible workflow is important. During the lecture, we learned that the Potti scandal damaged reputation of a top research institution and took away hopes from people with desperate illness.</p>
+<p>The following content of the paper will present the solutions to create a reproducible workflow. It allows readers and other researchers to reproduce their research and draw to the same conclusion. To make workflow reproducible, we need a series of advanced tools to accomplish this goal.</p>
+<p>At the beginning of any project, we need to make sure there is only one version of the work in the middle of research. In order to acchieve such a goal, we need <strong>Git</strong>. <strong>Git</strong> is an open source distributed version control system that helps people keep track of changes they made to documents.</p>
+<p><strong>Git</strong> is a version control system working on one's local address. How about we need some tools like dropbox where we can co-operate and work each part remotely. Now we need <strong>GitHub</strong>. <strong>GitHub</strong> is a web-based Git repository hosting service.</p>
+<p>Next concern is what format do our paper use? We use <strong>Markdown</strong>. <strong>Markdown</strong> is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name.</p>
+<p>Now that we have <strong>Markdown</strong>. But how do we convert paper's text to <strong>Markdown</strong>. To bridge this gap, we will use <strong>Pandoc</strong>. <strong>Pandoc</strong> is a free and open-source software document converter.</p>
+<p>How about compiling file together? We will use <strong>Makefile</strong>. And we will talk more about the <strong>Makefile</strong> in our main discussion in the paper.</p>
+<p>Now We believe everyone should have a general idea of why and how make workflow reproducible is important. We will extend this concepts to next part of the paper -- Main Discusion</p>
+<hr />
+<p>---# Main discussion</p>
 <h2 id="makefile">Makefile</h2>
 <ul>
 <li><p>Let's talk about makefile first. Makefile is an automation tool that compiles and links different scripts or files together. The rule in makefile is that the target depends on dependencies and there is a command below the target and dependencies. A makefile is executed with the make command, e.g. make [target1...]</p></li>
@@ -28,26 +41,30 @@
 </ul>
 <h2 id="git">Git</h2>
 <div class="figure">
-<img src="https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/git-logo.png" alt="Git logo" />
-<p class="caption">Git logo</p>
+<img src="../../images/git-logo.png" alt="alt tag" />
+<p class="caption">alt tag</p>
 </div>
 <ul>
-<li><p>Git is a version control system for programming developers. Every git repository on every computer has full version-tracking capabilities and is independent of network access</p></li>
-<li><p>Git also plays an important role in reproducible workflow. It allows each team member contribute their work without overwriting each other. At the same time, it also allows each contribution merges together. Besides team work aspects, git can keep track of modifications of files. Any changes in git can be traced back and examined. It allows follower fellows to reproduce the same work.</p></li>
+<li>Git is a version control system for programming developers. Every git repository on every computer has full version-tracking capabilities and is independent of network access</li>
+</ul>
+<p>The most common command lines asscoiated with Git are: * <code>git init</code> - which initiates git on a new working directory * <code>git status</code> - which checks the current git status * <code>git add</code> - which stages the file * <code>git commit</code> - which commits the changes with specific commit message * <code>git log</code> - which presents all history changes * <code>git checkout</code> - which checks out commits, branches or files</p>
+<ul>
+<li>Git also plays an important role in reproducible workflow. It allows each team member contribute their work without overwriting each other. At the same time, it also allows each contribution merges together. Besides team work aspects, git can keep track of modifications of files. Any changes in git can be traced back and examined. It allows follower fellows to reproduce the same work.</li>
 </ul>
 <h2 id="github">GitHub</h2>
 <div class="figure">
-<img src="https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/github-logo.png" alt="GitHub logo" />
-<p class="caption">GitHub logo</p>
+<img src="../../images/github-logo.png" alt="alt tag" />
+<p class="caption">alt tag</p>
 </div>
 <ul>
 <li><p>Github is a web-based online Git repository. It also offers version control like Git. GitHub offers both plans for private repositories, and free accounts which are commonly used to host open-source software projects.</p></li>
 <li><p>Github is an important component in reproducibile workflow. Projects on GitHub can be accessed and manipulated using the standard Git command-line interface and all of the standard Git commands work with it. GitHub also allows registered and non-registered users to browse public repositories on the site. If researchers conduct projects on GitHub, the workflow can be tracked and reproduced by followers.</p></li>
+<li><p>Also, Github creates a space for people to publish and store their work (codes, documents, graphs, emails etc.) on a remote server such that they can access the materials from all places. This will be a convenient tool for people to undo changes, avoid some mistakes, and save time and resources.</p></li>
 </ul>
 <h2 id="pandoc">Pandoc</h2>
 <div class="figure">
-<img src="https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/pandoc-logo.png" alt="Pandoc logo" />
-<p class="caption">Pandoc logo</p>
+<img src="../../images/github-logo.png" alt="alt tag" />
+<p class="caption">alt tag</p>
 </div>
 <ul>
 <li><p>Pandoc is a free and open-source software document converter.</p></li>
@@ -55,8 +72,8 @@
 </ul>
 <h2 id="markdown">Markdown</h2>
 <div class="figure">
-<img src="https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/markdown-logo.png" alt="Markdown logo" />
-<p class="caption">Markdown logo</p>
+<img src="../../images/pandoc-logo.png" alt="alt tag" />
+<p class="caption">alt tag</p>
 </div>
 <ul>
 <li>Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. The key design goal is readability – that the language be readable as-is, without looking like it has been marked up with tags or formatting instructions.</li>
@@ -94,6 +111,6 @@
 </ul>
 <hr />
 <h1 id="conclusions">Conclusions</h1>
-<p>In conclusions, we have successfully used all the tools that we introduced earlier to produce such a reproducible paper. This paper is designated for people who are interested in reproducible research.</p>
+<p>In conclusions, we have successfully used all the tools that we introduced earlier to produce such a reproducible paper. This paper is designated for people who are interested in reproducible research. We will continue to make effort and learn about reproducible workflow and how we can better contribute to the world of research. Hope you enjoy the paper.</p>
 </body>
 </html>

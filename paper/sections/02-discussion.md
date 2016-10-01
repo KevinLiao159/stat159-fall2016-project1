@@ -1,4 +1,3 @@
-
 # Main discussion
 
 
@@ -8,28 +7,38 @@
 * Makefile plays an important role in reproducibility because it can shorten the compiling process and so it reduces chances of potential errors that are created during a complicated data compiling process. 
 
 ## Git
-![Git logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/git-logo.png)
+![alt tag](../../images/git-logo.png)
 
 * Git is a version control system for programming developers. Every git repository on every computer has full version-tracking capabilities and is independent of network access 
+
+The most common command lines asscoiated with Git are:
+* `git init` - which initiates git on a new working directory
+* `git status` - which checks the current git status
+* `git add` - which stages the file
+* `git commit` - which commits the changes with specific commit message
+* `git log` - which presents all history changes 
+* `git checkout` - which checks out commits, branches or files
 
 * Git also plays an important role in reproducible workflow. It allows each team member contribute their work without overwriting each other. At the same time, it also allows each contribution merges together. Besides team work aspects, git can keep track of modifications of files. Any changes in git can be traced back and examined. It allows follower fellows to reproduce the same work. 
 
 ## GitHub
-![GitHub logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/github-logo.png)
+![alt tag](../../images/github-logo.png)
 
 * Github is a web-based online Git repository. It also offers version control like Git. GitHub offers both plans for private repositories, and free accounts which are commonly used to host open-source software projects. 
 
 * Github is an important component in reproducibile workflow. Projects on GitHub can be accessed and manipulated using the standard Git command-line interface and all of the standard Git commands work with it. GitHub also allows registered and non-registered users to browse public repositories on the site. If researchers conduct projects on GitHub, the workflow can be tracked and reproduced by followers.
 
+* Also, Github creates a space for people to publish and store their work (codes, documents, graphs, emails etc.) on a remote server such that they can access the materials from all places. This will be a convenient tool for people to undo changes, avoid some mistakes, and save time and resources.
+
 ## Pandoc
-![Pandoc logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/pandoc-logo.png)
+![alt tag](../../images/github-logo.png)
 
 * Pandoc is a free and open-source software document converter. 
 
 * Pandoc can read many forms of lightweight markup language, HTML, ReStructuredText, LaTeX, OPML, Org-mode, DocBook, and Office Open XML (Microsoft Word .docx). It can be used to create files in many more formats, including Office Open XML, OpenDocument, HTML, Wiki markup, InDesign ICML, web-based slideshows, ebooks, OPML, and various TeX formats. It has built-in support for converting LaTeX mathematical equations to MathML and MathJax, among other formats.
 
 ## Markdown
-![Markdown logo](https://github.com/KevinLiao159/stat159-fall2016-project1/blob/master/images/markdown-logo.png)
+![alt tag](../../images/pandoc-logo.png)
 
 * Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name. The key design goal is readability – that the language be readable as-is, without looking like it has been marked up with tags or formatting instructions.
 

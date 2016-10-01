@@ -1,13 +1,11 @@
 # Declare a variable
 md = paper/sections/*.md
-png = images/*.png
+
 
 .PHONY: all clean
 
 all: paper/paper.html 
 
-paper/paper.md: $(png)
-	! [logo]($(png))
 
 paper/paper.md: $(md)
 	cat $(md) > paper/paper.md
